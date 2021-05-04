@@ -53,8 +53,13 @@
         <a href="/insert">New Product</a>
         <a href="/insert">About</a>
     </div>
-    <br>
-    <br>
+      <marquee id="marq" scrollamount="10" direction="right" loop="100" scrolldelay="0" behavior="alternate" onmouseover="this.stop()"
+        onmouseout="this.start()"> 
+        {{!-- slide - alternate - scroll --}}
+        <img src="https://chicco.com.vn/wp-content/uploads/2019/07/do-choi-mo-hinh-xe-vespa.jpg"width="200px" />
+         <img src="https://homegift.vn/503-large_default/do-choi-toystory-buzz-lightyear.jpg"width="200px" />
+        <img src="https://chicco.com.vn/wp-content/uploads/2019/07/do-choi-mo-hinh-xe-vespa-0.jpg"width="200px" />
+    </marquee>
     <form action="/update" method="post">
         <input type="hidden" name="txtId" value="{{product._id}}">
         Name <input type="text" name="txtName" value="{{product.name}}" />
